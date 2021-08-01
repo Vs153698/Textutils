@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Error {% endblock %}
+{% block style %}
+body{
+background:#f6f6f4;
+}
+{% endblock %}
+
+{% block body %}
+<div class="alert alert-success alert-dismissible fade show" style="text-align:center;" role="alert">
+  <strong>Please Check The Button !</strong> Go To <a href="/" style="text-decoration:none;">Homepage</a>!
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div style="display:flex; margin-top:-70px; flex-direction:column; justify-content:center; align-items:center; back" class="error">
+    <img  src="https://cdn.dribbble.com/users/605899/screenshots/4144886/pikabu.gif">
+<!--      <h1>404</h1>-->
+<!--      <H1>Page Not Found</H1>-->
+    <button type="button" class="btn btn-primary"><a style="color:white; text-decoration:none; margin-top:-50px;" href="/">Go To Homepage</a> </button>
+</div>
+{% endblock %}
+

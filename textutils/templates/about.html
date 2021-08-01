@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %} About Us {% endblock %}
+{% block body %}
+
+
+
+<div style=" font-family: 'Baloo Bhai 2', cursive; text-align:center; margin:25px; display:flex; flex-direction:column; justify-content:center; align-items:center;" class="about">
+
+<div><h1 style=" font-weight:700; text-align: center; font-family: 'Baloo Bhai 2', cursive;, cursive;"><span style="font-size: 3rem;"><u style="text-decoration: none; ">A</u><u style="text-decoration: none;">bout Us !</u></span></h1><h3 style="text-align: center;"><span style="font-weight: normal;"><span style="font-size: large;">Hello Friends Welcome To Textutils</span></span></h3><p style="text-align: center;"><br /><p style="font-size: 18px;">Textutils is a Professional Text Editing Platform. Here we will provide you only interesting content, which you will like very much.<br /><p style="text-align: center;"><br /><p style="font-size: 18px;">We're dedicated to providing you the best of Text Editing, with a focus on dependability and Working With Text. Our About-us page was created with the help of  our hard working team.<br /><br /><p style="font-size: 18px;">We're working to turn our passion for Text Editing into a booming online website. We hope you enjoy our Text Editing as much as we enjoy offering them to you.</p><div style="text-align: center;"><br /></div><div style="text-align: center;"><h3>We will keep posting more important posts on my Website for all of you. Please give your support and love.</h3></div><div style="text-align: center;"><h3>Thanks For Visiting Our Site</h3></div><div style="text-align: center;"></div></div>
+</div>
+
+
+<div style="display:flex; justify-content:center;" class="btn">
+<button style=" font-family: 'Baloo Bhai 2', cursive; width:140px; " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contact Us</button>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">HOW CAN WE HELP YOU ?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/about/" method="post">{% csrf_token %}
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Name:</label>
+            <input name="namemodal" type="text" class="form-control" id="recipient-name" placeholder="Enter Your Name....">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name1" class="col-form-label">E-Mail:</label>
+            <input name="emailmodal" type="email" class="form-control" id="recipient-name1" placeholder="Enter Your E-Mail....">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea name="textmodal"  class="form-control" id="message-text"></textarea>
+          </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

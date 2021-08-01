@@ -1,0 +1,43 @@
+
+{% extends 'base.html' %}
+{% block titile %} contact us {% endblock %}
+{% block body %}
+<div style="text-align:center;" class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>We Are Here !</strong> Drop Us A Mail Here, We Will Shortly Get Back To You.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<h1 style="text-align:center; font-family:cursive; font-weight:700;">Contact Us</h1>
+<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; margin-top:20px;">
+<form action="/contact/" method="POST"> {% csrf_token %}
+  <div class="mb-3">
+    <input style="text-align:center; width:500px; border-radius:20px; padding:8px;" name="name" type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name...">
+  </div>
+  <div class="mb-3">
+    <input style="text-align:center; width:500px; border-radius:20px; padding:8px;" name="email" type="email" class="form-control " id="exampleInputPassword2" placeholder="Enter Your E-Mail...">
+      <div style="text-align:center;" id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+    <div class="mb-3">
+    <input style="text-align:center; width:500px; border-radius:20px; padding:8px;" name="phone" type="phone" class="form-control " id="exampleInputPassword3" placeholder="Enter Your Phone...">
+        <div style="text-align:center;" id="phoehelp" class="form-text">We'll never share your phone with anyone else.</div>
+        </div>
+  <div class="mb-3">
+  <textarea name="text" style="border-radius:20px;" class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Your Query Here..."></textarea>
+</div>
+  <div class="btn" style="display:flex; justify-content:center;">
+  <button style="width:110px; border-radius:15px;" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+{%  endblock %}
+
+
+
+
+
+
+
+
+
+
+
+

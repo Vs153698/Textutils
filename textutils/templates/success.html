@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block title %} Successful {% endblock %}
+{% block body %}
+<div class="alert alert-success" role="alert">
+  <strong>Submission Successful !</strong> To know more about us visit our <a style="text-decoration:none;" href="/about" class="alert-link">About Us</a> page.
+</div>
+
+<div style="display:flex;  justify-content:center; flex-direction:column; align-items: center; margin-top:30px;" class="success">
+<img style="width:350px; height:300px;" src="https://cdn.dribbble.com/users/1751799/screenshots/5512482/check02.gif">
+    <h1 style="text-align:center; margin-top:-69px; font-family:cursive;">Your Query Has Been Submitted Successfully. </h1>
+
+    </div>
+<div class="btn1" style="display:flex; justify-content:center; margin-top:20px;">
+    <button style="margin-right:25px; " type="button" class="btn btn-primary btn-lg"><a style="text-decoration:none; color:white;" href="/">Homepage</a></button>
+<button  type="button" class="btn btn-primary btn-lg"><a style="text-decoration:none; color:white;" href="/contact">New Query</a></button>
+</div>
+
+{% endblock %}

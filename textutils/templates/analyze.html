@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Analyzed {% endblock %}
+{% block body %}
+<div class="alert alert-success alert-dismissible fade show" style="text-align:center;" role="alert">
+  <strong>Analyzed Successfully !</strong> Your Text Is Successfully Analyzed Please Check The Answer Below !
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div style="display:flex; flex-direction:column; justify-content:center; align-items:center;" class="answer">
+
+
+    <h1 style="margin:30px;font-family: 'Baloo Bhai 2', cursive;border:2px solid darkred;border-radius-top-left: 15px;border-top-left-radius: 20px;border-bottom-right-radius: 20px;width: 88vw;text-align: center;height: 13vh;align-items: center;display: flex;justify-content: center;align-items: center; background:black; color:darkorange;">Here Is Your Text And {{purpose1}} {{purpose2}} {{purpose3}}</h1>
+    <pre style="border:2px solid darkblue;width: 82vw;height: 100vh;border-radius: 25px;padding: 23px;font-family: 'Baloo Bhai 2', cursive;font-size: 1.8rem;font-weight: 550;background: #212529;color: white;"><p>{{analyzed}}</p></pre>
+</div>
+{% endblock %}
